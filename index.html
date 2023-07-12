@@ -39,6 +39,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <style>
+        body{
+            background-color: #EFF4F9;
+        }
         .wrapper {
             position: relative;
             bottom: 0;
@@ -81,29 +84,30 @@
     </style>
 </head>
 
-<body class="d-flex justify-content-center align-items-center" style="background: #EFF4F9; ">
+<body class="d-flex justify-content-center align-items-center">
 
     <div class="container-fluid d-grid justify-content-center p-5">
         <div class="row  bg-white shadow-sm p-3">
-            <div class="col-12 info text-center">
+            <div class="col-12 info text-center ">
                 <a class="navbar-brand text-black fs-3 text-decoration-none" id="logo">
                     <!-- <img src="image/codingclasslogo-1 copy.png" alt="" width="20%" class="texy-white">  -->
                     CodingClass
                 </a>
-                <p class="text-uppercase text-start fs-5">Student Registration Form</p>
+                <p class="text-uppercase text-start fs-5 pt-3">Student Registration Form</p>
             </div>
 
             <hr>
 
+            <!----------Student Form---------->
             <form class="col-12" action="student_insert" method="post">
                 <div class="row  pb-3">
                     <div class="wrapper d-flex justify-content-center">
                         <img src="User-Profile-PNG-Image.png" class="border border-3 border-secondary bg-secondary" alt="">
-                        <input type="File" class="my_file shadow-sm" name="" id="" aria-describedby="helpId"
-                            placeholder="">
+                        <input type="File" class="my_file shadow-sm" name="" id="image" placeholder="">
                     </div>
                     <p class="fs-5 d-flex justify-content-center p-1">Image</p>
                 </div>
+
                 <div class="row d-flex g-4">
                     <!-- Name -->
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 form-floating">
@@ -191,7 +195,7 @@
                             <option value="Uttarakhand">Uttarakhand</option>
                             <option value="West Bengal">West Bengal</option>
                         </select>
-                        <label for="floatingSelect" class="ms-2">State</label>
+                        <label for="state" class="ms-2">State</label>
                     </div>
 
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 form-floating">
@@ -213,7 +217,7 @@
 
                     <!-- Courses -->
                     <div class="col-xl-6 col-lg-6  col-md-12 col-sm-12 form-floating">
-                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <select class="form-select" id="level" aria-label="Floating label select example">
                             <option selected disabled>Course</option>
                             <option value="BCA">BCA</option>
                             <option value="MCA">MCA</option>
@@ -222,7 +226,7 @@
                             <option value="Bsc">Bsc</option>
                             <option value="Msc">Msc</option>
                         </select>
-                        <label for="floatingSelect" class="ms-2">Note:- Which is one courses you want join class</label>
+                        <label for="level" class="ms-2">Note:- Which is one courses you want join class</label>
                     </div>
 
                     <div class="col-xl-6 col-lg-6  col-md-12 col-sm-12 form-floating">
@@ -252,7 +256,7 @@
                             id="form-reset-btn">
                         </input>
                         <input type="submit" value="Submit Form" name="submit" class="btn btn-secondary shadow-sm"
-                            id="submit-btn"><a href="#" class="nav-link text-decoration-none"></a>
+                            id="submit-btn"><a href="" class="nav-link text-decoration-none"></a>
                     </div>
                 </div>
             </form>
