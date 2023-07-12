@@ -157,7 +157,7 @@
                     <!-- State and City -->
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 form-floating">
                         <select name="state" id="state" class="form-control">
-                            <!-- <option value="State disabled">State</option> -->
+                            <option value="State" selected hidden>State</option>
                             <option value="Andhra Pradesh">Andhra Pradesh</option>
                             <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
                             <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -204,21 +204,21 @@
                     </div>
 
                     <!-- Pincode -->
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 form-floating ">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 form-floating ">
                         <input type="text" class="form-control" id="Pincode" placeholder="Pincode">
                         <label for="Pincode" class="ms-3">Pincode</label>
                     </div>
 
                     <!-- Number -->
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 form-floating ">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 form-floating ">
                         <input type="text" class="form-control" id="Mobile Number" placeholder="Mobile Number">
                         <label for="Mobile Number" class="ms-3">Mobile Number</label>
                     </div>
 
                     <!-- Courses -->
-                    <div class="col-xl-6 col-lg-6  col-md-12 col-sm-12 form-floating">
+                    <div class="col-xl-4 col-lg-4  col-md-12 col-sm-12 form-floating">
                         <select class="form-select" id="level" aria-label="Floating label select example">
-                            <option selected disabled>Course</option>
+                            <option selected hidden>Course</option>
                             <option value="BCA">BCA</option>
                             <option value="MCA">MCA</option>
                             <option value="B.Tech">B.Tech</option>
@@ -233,6 +233,12 @@
                     <div class="col-xl-6 col-lg-6  col-md-12 col-sm-12 form-floating">
                         <input type="email" class="form-control" id="email" placeholder="name@example.com" value="">
                         <label for="email" class="ms-3">Email</label>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="col-xl-6 col-lg-6  col-md-12 col-sm-12 form-floating">
+                        <input type="password" class="form-control" id="password" placeholder="Password" value="">
+                        <label for="password" class="ms-3">Password</label>
                     </div>
                 </div>
 
