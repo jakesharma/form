@@ -71,11 +71,12 @@
             left: 0;
             height: 150px;
             width: 150px;
-            border: 3px solid gray;
             border-radius: 50%;
             object-fit: cover;
             object-position: top;
-            background: #dfdfdf
+            background: none;
+            background-repeat: no-repeat;
+            background-position: center;
         }
     </style>
 </head>
@@ -97,7 +98,7 @@
             <form class="col-12" action="student_insert" method="post">
                 <div class="row  pb-3">
                     <div class="wrapper d-flex justify-content-center">
-                        <img src="3509474-hd_prince_of_persia__two_thrones_wallpaper-normal.jpg" class="" alt="">
+                        <img src="User-Profile-PNG-Image.png" class="border border-3 border-secondary bg-secondary" alt="">
                         <input type="File" class="my_file shadow-sm" name="" id="" aria-describedby="helpId"
                             placeholder="">
                     </div>
@@ -149,7 +150,7 @@
                     </div>
 
                     <!-- State and City -->
-                    <div class="col-6 form-floating">
+                    <div class="col-xl-6 col-md-12 form-floating">
                         <select name="state" id="state" class="form-control">
                             <!-- <option value="State disabled">State</option> -->
                             <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -191,25 +192,25 @@
                         </select>
                         <label for="floatingSelect" class="ms-2">State</label>
                     </div>
-                    <div class="col-6 form-floating">
+                    <div class="col-xl-6 col-md-12 form-floating">
                         <input type="text" class="form-control" id="City" placeholder="City">
                         <label for="City" class="ms-3">City</label>
                     </div>
 
                     <!-- Pincode -->
-                    <div class="col-6 form-floating ">
+                    <div class="col-xl-6 col-md-12 form-floating ">
                         <input type="text" class="form-control" id="Pincode" placeholder="Pincode">
                         <label for="Pincode" class="ms-3">Pincode</label>
                     </div>
 
                     <!-- Number -->
-                    <div class="col-6 form-floating ">
+                    <div class="col-xl-6 col-md-12 form-floating ">
                         <input type="text" class="form-control" id="Mobile Number" placeholder="Mobile Number">
                         <label for="Mobile Number" class="ms-3">Mobile Number</label>
                     </div>
 
                     <!-- Courses -->
-                    <div class="col-6 form-floating">
+                    <div class="col-xl-6 col-md-12 form-floating">
                         <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                             <option selected disabled>Course</option>
                             <option value="BCA">BCA</option>
@@ -221,7 +222,7 @@
                         </select>
                         <label for="floatingSelect" class="ms-2">Note:- Which is one courses you want join class</label>
                     </div>
-                    <div class="col-6 form-floating">
+                    <div class="col-xl-6 col-md-12 form-floating">
                         <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                             <option selected disabled>Course</option>
                             <option value="BCA">BCA</option>
